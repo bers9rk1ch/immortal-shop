@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>IMMORTAL SHOP</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/titan32x32.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="module" src="assets/scripts/navbar.js" defer></script>
+	<script type="module" src="assets/scripts/App.js" defer></script>
+	<script type="module" src="assets/scripts/reviews.js" defer></script>
+	<script type="module" src="assets/scripts/filters.js" defer></script>
+	<script type="module" src="assets/scripts/pagination.js" defer></script>
+	<script type="module" src="assets/scripts/paymentModal.js" defer></script>
+</head>
+<body>
+	<div class="payment-modal">
+		<div class="payment-modal_container">
+			<button class="payment-modal_close-button"><span class="m-icon">close</span></button>
+			<h1 class="payment-title">Покупка</h1>
+			<div class="payment-buy">
+				<div class="payment-buy-info">
+					<p>Всего товаров: <span class="totalBasketTovars">10</span></p>
+					<p>Итого: <span class="totalBasketPrice">10000£</span></p>
+				</div>
+				<div class="payment-buy-buttons">
+					<label>Ссылка на ваш стим профиль <span class="m-icon" title="">help</span></label>
+					<p class="payment-buy-error"></p>
+					<input type="text">
+					<button>Оплатить</button>
+				</div>
+			</div>
+			<ol class="payment-questions">
+				<h1 class="payment-questions_title">Часто задаваемые вопросы</h1>
+				<li>
+					<h1>Как производится зачисление скинов?</h1>
+					<div><div>Для начала вы должны указать ссылку на ваш стим профиль. Далее наш человек отправит вам заявку друзья и по истечению 30 дней, отправит подарком вам ваши скины</div></div>
+				</li>
+				<li>
+					<h1>Почему 30 дней?</h1>
+					<div><div>Это мера безопасности Valve. После добавления в друзья, для отправки подарка нужно подождать 30 дней</div></div>
+				</li>
+				<li>
+					<h1>Что делать, если прошло 30 дней и вещи не приходят?</h1>
+					<div><div>Вы можете обратиться в тех поддержку. Пришлите нам чек оплаты и укажите ссылку на ваш стим профиль. Если ваши данные окажутся верными, то мы вернём вам деньги</div></div>
+				</li>
+				<li>
+					<h1>Если мне не понравился купленный мною скин, могу ли я вернуть деньги?</h1>
+					<div><div>Нет, если вам уже пришёл товар, то мы не можем вернуть вам деньги. Мы можем вернуть вам деньги только в случае ошибки зачисления товара на ваш аккаунт</div></div>
+				</li>
+				<li>
+					<h1>Если я передумал, но уже купил, могу ли я отменить заказ и вернуть деньги?</h1>
+					<div><div>Да, можете, но только в течении 15 дней с момента оплаты. Пришлите нам чек оплаты и укажите ссылку на ваш стим профиль. Если ваши данные окажутся верными, то мы вернём вам деньги</div></div>
+				</li>
+			</ol>
+		</div>
+	</div>
+	<div class="scroll-up-button">
+		<div class="scroll-up-button-container">
+			<span class="m-icon">arrow_upward</span>
+		</div>
+	</div>
+	<div class="modal-container"></div>
+	<div class="container-header">
+		<header class="header">
+			<div class="header-container">
+				<div class="logo">
+					<a href="#/">
+						<img src="assets/img/icons/titan.png" alt="titan">
+						<h1>IMMORTAL SHOP</h1>
+					</a>
+				</div>
+				<nav class="navbar">
+					<div class="nav-menu__mobile-adaptive">
+						<div></div>
+					</div>
+					<div class="nav-menu_container">
+						<ul class="nav-menu">
+							<li class="catalog menu-active-link" id="menu-link">
+								<a href="#/">Каталог</a>
+							</li>
+							<li class="feedback menu-active-link" id="menu-link">
+								<a href="#/feedback">Отзывы</a>
+							</li>
+							<li class="about menu-anchor-link" id="menu-link">
+								<a>О нас</a>
+							</li>
+							<li class="social menu-anchor-link" id="menu-link">
+								<a>Социальные сети</a>
+							</li>
+							<li class="basket menu-active-link" id="menu-link">
+								<span class="basket-length"></span><a href="#/basket"><span class="m-icon">shopping_basket</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="remove-filters">
+		<div class="tovar-filters">
+			<form>
+				<div class="customSelect">
+					<div class="select-input">
+						<input required type="text" placeholder="Выберите героя">
+						<div class="close">
+							<span class="m-icon">close</span>
+						</div>
+						<div>
+							<span class="m-icon">expand_more</span>
+						</div>
+					</div>
+					<div class="select-list-container">
+						<ul class="select-list">
+							<li>
+								Выберите героя
+							</li> 
+						</ul>
+					</div>
+				</div>
+				<div class="tovar-filter-money">
+					<h1>Сортировать по цене<span class="m-icon">expand_more</span></h1>
+				</div>
+			</form>
+		</div>
+	</div>
+	<main id="app">
+		
+	</main>
+	<footer class="footer">
+		<div class="footer-container">
+			<h1 class="title">О нас</h1>
+			<div>
+				<div class="footer-about footer-item" id="about">
+					<p>Этот игровой магазин специализируется на продаже редких и эксклюзивных скинов для Dota 2. Приобретите нашу обширную коллекцию скинов и найдите тот, который соответствует вашему стилю. Улучшите свой игровой опыт с помощью нашего выбора скинов и получите максимальную отдачу от вашего игрового процесса.</p>
+				</div>
+				<div class="footer-social footer-item">
+					<div class="company-info">
+						<p><span class="m-icon">call</span><a href="tel:+78005553535">+7 (800) 555 35-35</a></p>
+						<p><span class="m-icon">location_on</span><a href="geo:55.744166,37.623861" target="_blank" rel="noopener noreferrer">Москва, 2-й Кадашёвский переулок, 4</a></p>
+						<p><span class="m-icon">mail</span><a href="mail:immortalshop@support.com">immortalshop@support.com</a></p>
+					</div>
+					<ol class="social-links" id="social">
+						<li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" version="1.1"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/> </svg></li>
+						<li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M484.7,132c3.56-11.28,0-19.48-15.75-19.48H416.58c-13.21,0-19.31,7.18-22.87,14.86,0,0-26.94,65.6-64.56,108.13-12.2,12.3-17.79,16.4-24.4,16.4-3.56,0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14,0-13.22,6.15-13.22,12.3,0,12.81,18.81,15.89,20.84,51.76V254c0,16.91-3,20-9.66,20-17.79,0-61-66.11-86.92-141.44C105,117.64,99.88,112,86.66,112H33.79C18.54,112,16,119.17,16,126.86c0,13.84,17.79,83.53,82.86,175.77,43.21,63,104.72,96.86,160.13,96.86,33.56,0,37.62-7.69,37.62-20.5V331.33c0-15.37,3.05-17.93,13.73-17.93,7.62,0,21.35,4.09,52.36,34.33C398.28,383.6,404.38,400,424.21,400h52.36c15.25,0,22.37-7.69,18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35,0-23.57-.51,0,63.55-91.22,70.15-122" style="fill-rule:evenodd"></path></svg></li>
+						<li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"> <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"></path> </svg></li>
+						<li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/> </svg></li>
+						<li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16"> <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/> </svg></li>
+						<li><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/> </svg></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="copyRight footer-item">
+			<p>© 2023 - 2024 www.immortalshop.com - All Rights Reserved.</p>
+			<p>Last Updated : 17/01/2024 5:20:43</p>
+			<p>made by <a target="_blank" href="https://github.com/DaRkLoTii">DaRkLoTii</a></p>
+		</div>
+	</footer>
+	<div id="root"></div>
+</body>
+</html>
