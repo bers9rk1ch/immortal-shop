@@ -1,1 +1,2 @@
-# immortal-shop
+# immortal-sho
+# https://darklotii.github.io/immortal-shop/
