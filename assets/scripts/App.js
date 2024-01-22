@@ -61,7 +61,7 @@ basket.innerHTML = `
 `;
 const buttonBuyBasket = document.createElement('button');
 buttonBuyBasket.innerText = 'Перейти к оплате';
-buttonBuyBasket.addEventListener('click', e => {
+buttonBuyBasket.addEventListener('click', event => {
 	openPaymentModal();
 });
 basket.querySelector('.basket-totalPrice-buying')?.appendChild(buttonBuyBasket);

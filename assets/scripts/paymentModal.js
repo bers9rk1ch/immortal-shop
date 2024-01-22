@@ -14,8 +14,10 @@ paymentQuestions.map((item) => {
 
 buttonBuy.addEventListener('click', event => {
 	const steamLink = linkSteamInput.value;
-	if (steamLink === '' || !steamLink.includes('http://')) {
-		return errorBuy.innerText = 'Укажите ссылку на ваш стим профиль!*'
+	if (steamLink === '' || !steamLink.includes('https://steamcommunity.com/id/')) {
+		linkSteamInput.focus();
+		return errorBuy.innerText = 'Укажите ссылку на ваш стим профиль!*';
+
 	}
 	const modal = document.querySelector('.payment-modal');
 	errorBuy.innerText = '';
@@ -32,7 +34,7 @@ export const openPaymentModal = () => {
 	modal.addEventListener('click', event => modal.classList.remove('active'));
 	modalContainer.addEventListener('click', event => event.stopPropagation());
 
-	const {length} = getBasketItems();
+	const { length } = getBasketItems();
 
 	const totalBasketPrice = document.querySelector('.totalBasketPrice');
 	const totalBasketTovars = document.querySelector('.totalBasketTovars');
@@ -40,4 +42,3 @@ export const openPaymentModal = () => {
 	totalBasketPrice.innerText = window.totalPriceTovars + '₽';
 	totalBasketTovars.innerText = length;
 }
-

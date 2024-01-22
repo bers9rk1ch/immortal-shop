@@ -8,7 +8,7 @@ const header = document.querySelector('.header');
 const scrollUpContainer = document.querySelector('.scroll-up-button');
 const scrollUpButton = document.querySelector('.scroll-up-button-container span');
 
-scrollUpButton.addEventListener('click', e => {
+scrollUpButton.addEventListener('click', event => {
 	window.scrollTo({
 		top: 0,
 		behavior: "smooth",
@@ -59,15 +59,15 @@ window.addEventListener('hashchange', event => {
 })
 
 
-navMenuMobile.addEventListener('click', e => e.target !== menu ? navbar.classList.toggle('active') : '');
-menu.addEventListener('click', e => e.stopPropagation());
+navMenuMobile.addEventListener('click', event => event.target !== menu ? navbar.classList.toggle('active') : '');
+menu.addEventListener('click', event => event.stopPropagation());
 
 for (let i = 0; i < menu.children.length; i++) {
-	menu.children[i].addEventListener('click', e => e.stopPropagation());
+	menu.children[i].addEventListener('click', event => event.stopPropagation());
 }
 
 menuLinksActive.map((link) => {
-	link.addEventListener('click', e => {
+	link.addEventListener('click', event => {
 		e.stopPropagation();
 	});
 });
