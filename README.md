@@ -1,2 +1,2 @@
 # immortal-shop
-See the site [here](https://pages.github.com/).
+See the site [here](https://darklotii.github.io/immortal-shop/).
