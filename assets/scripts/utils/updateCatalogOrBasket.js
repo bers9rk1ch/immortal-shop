@@ -21,7 +21,7 @@ const getCatalog = (heroName) => {
 		.map(({title, price, id, img, rarity}) => {
 			const tovar = document.createElement('div');
 			tovar.classList = `tovar-item${rarity && rarity === 'Arcana' ? ' arcana': ''}${basket[id - 1].count != 0 ? ' onBasket': ''}`;
-			tovar.style.cssText = `background: url(${img}) no-repeat center center / cover`;
+			tovar.style.cssText = `background: url(./assets/img/heroes/${img}) no-repeat center center / cover`;
 			
 			tovar.innerHTML = `
 				<div class="item-img"></div>
@@ -48,10 +48,11 @@ const getBasket = () => {
 	window.totalPriceTovars = 0;
 	return basketStorage.filter(({count}) => Number(count) > 0).map(({id, count}) => {
 		const {title, description, price, img} = tovars[Number(id) - 1];
+		console.log(img);
 		const tovar = document.createElement('div');
 		tovar.classList = 'basket-item';
 		tovar.innerHTML = `
-			<div class="item-img"><div class="img" style="background: url(${img}) no-repeat center center / cover"></div></div>
+			<div class="item-img"><div class="img" style="background: url(./assets/img/heroes/${img}) no-repeat center center / cover"></div></div>
 			<div class="item-info">
 				<div class="item-description">
 					<label>Товар</label>

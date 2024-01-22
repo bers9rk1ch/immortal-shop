@@ -13,7 +13,7 @@ const openModal = (heroId) => {
 	modal.innerHTML = `
 		<span class="close-modal m-icon">close</span>
 		<div class="item-img">
-			<div class="img" style="background: url(${img}) no-repeat center center / cover"></div>
+			<div class="img" style="background: url(./assets/img/heroes/${img}) no-repeat center center / cover"></div>
 		</div>
 		<div class="item-info-container">
 			<div class="item-info">

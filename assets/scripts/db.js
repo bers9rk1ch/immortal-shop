@@ -2,7 +2,7 @@ const tovars = [
 	{
 		id: 1,
 		title: 'Brands of the Reaper',
-		img: '../assets/img/heroes/Brands-of-the-Reaper.png',
+		img: 'Brands-of-the-Reaper.png',
 		description: 'Содержит все предметы из набора Brands of the Reaper',
 		price: 400,
 		hero: 'Anti-Mage'
@@ -10,7 +10,7 @@ const tovars = [
 	{
 		id: 2,
 		title: 'Dezun Viper',
-		img: '../assets/img/heroes/Dezun-Viper.png',
+		img: 'Dezun-Viper.png',
 		description: 'Содержит все предметы из набора Dezun Viper',
 		price: 500,
 		hero: 'Dazzle'
@@ -18,7 +18,7 @@ const tovars = [
 	{
 		id: 3,
 		title: 'Snailfire',
-		img: '../assets/img/heroes/Snailfire.png',
+		img: 'Snailfire.png',
 		description: 'Содержит все предметы из набора Snailfire',
 		price: 700,
 		hero: 'SnapFire'
@@ -26,7 +26,7 @@ const tovars = [
 	{
 		id: 4,
 		title: 'Tomokan Footsoldier',
-		img: '../assets/img/heroes/Tomokan-Footsoldier.png',
+		img: 'Tomokan-Footsoldier.png',
 		description: 'Содержит все предметы из набора Tomokan Footsoldier',
 		price: 200,
 		hero: 'Hoodwink'
@@ -34,7 +34,7 @@ const tovars = [
 	{
 		id: 5,
 		title: 'Sea Spirit',
-		img: '../assets/img/heroes/Sea-Spirit.png',
+		img: 'Sea-Spirit.png',
 		description: 'Содержит все предметы из набора Sea Spirit',
 		price: 350,
 		hero: 'Kunkka'
@@ -42,7 +42,7 @@ const tovars = [
 	{
 		id: 6,
 		title: 'Beast of Thunder',
-		img: '../assets/img/heroes/Beast-of-Thunder.png',
+		img: 'Beast-of-Thunder.png',
 		description: 'Содержит все предметы из набора Beast of Thunder',
 		price: 200,
 		hero: 'Storm Spirit'
@@ -50,7 +50,7 @@ const tovars = [
 	{
 		id: 7,
 		title: 'Primeval Abomination',
-		img: '../assets/img/heroes/Primeval-Abomination.png',
+		img: 'Primeval-Abomination.png',
 		description: 'Содержит все предметы из набора Primeval Abomination',
 		price: 700,
 		hero: 'Primal Beast'
@@ -58,7 +58,7 @@ const tovars = [
 	{
 		id: 8,
 		title: 'Tyrant of the Veil',
-		img: '../assets/img/heroes/Tyrant-of-the-Veil.png',
+		img: 'Tyrant-of-the-Veil.png',
 		description: 'Содержит все предметы из набора Tyrant of the Veil',
 		price: 800,
 		hero: 'Wraith King'
@@ -66,7 +66,7 @@ const tovars = [
 	{
 		id: 9,
 		title: 'Darkwood Eulogy',
-		img: '../assets/img/heroes/Darkwood-Eulogy.png',
+		img: 'Darkwood-Eulogy.png',
 		description: 'Содержит все предметы из набора Darkwood Eulogy',
 		price: 300,
 		hero: 'Death Prophet'
@@ -74,7 +74,7 @@ const tovars = [
 	{
 		id: 10,
 		title: 'Astral Herald',
-		img: '../assets/img/heroes/Astral-Herald.png',
+		img: 'Astral-Herald.png',
 		description: 'Содержит все предметы из набора Astral Herald',
 		price: 450,
 		hero: 'Dawnbreaker'
@@ -82,7 +82,7 @@ const tovars = [
 	{
 		id: 11,
 		title: 'Sacred Chamber Guardian',
-		img: '../assets/img/heroes/Sacred-Chamber-Guardian.png',
+		img: 'Sacred-Chamber-Guardian.png',
 		description: 'Содержит все предметы из набора Sacred Chamber Guardian',
 		price: 450,
 		hero: 'Huskar'
@@ -90,7 +90,7 @@ const tovars = [
 	{
 		id: 12,
 		title: 'Perils of the Red Bank',
-		img: '../assets/img/heroes/Perils-of-the-Red-Banks.png',
+		img: 'Perils-of-the-Red-Banks.png',
 		description: 'Содержит все предметы из набора Perils of the Red Banks',
 		price: 500,
 		hero: 'Chen'
@@ -98,7 +98,7 @@ const tovars = [
 	{
 		id: 13,
 		title: 'Molten Bore',
-		img: '../assets/img/heroes/Molten-Bore.png',
+		img: 'Molten-Bore.png',
 		description: 'Содержит все предметы из набора Molten Bore',
 		price: 400,
 		hero: 'Mars'
@@ -106,7 +106,7 @@ const tovars = [
 	{
 		id: 14,
 		title: 'Seclusions of the Void',
-		img: '../assets/img/heroes/Seclusions-of-the-Void.png',
+		img: 'Seclusions-of-the-Void.png',
 		description: 'Содержит все предметы из набора Seclusions of the Void',
 		price: 500,
 		hero: 'Templar Asassin'
@@ -114,7 +114,7 @@ const tovars = [
 	{
 		id: 15,
 		title: 'Forgotten Station',
-		img: '../assets/img/heroes/Forgotten-Station.png',
+		img: 'Forgotten-Station.png',
 		description: 'Содержит все предметы из набора Forgotten Station',
 		price: 550,
 		hero: 'Terrorblade'
@@ -122,7 +122,7 @@ const tovars = [
 	{
 		id: 16,
 		title: 'Dirge Amplifier',
-		img: '../assets/img/heroes/Dirge-Amplifier.png',
+		img: 'Dirge-Amplifier.png',
 		description: 'Содержит все предметы из набора Dirge Amplifier',
 		price: 300,
 		hero: 'Undying'
@@ -130,7 +130,7 @@ const tovars = [
 	{
 		id: 17,
 		title: 'Trophies of the Hallowed Hunt',
-		img: '../assets/img/heroes/Trophies-of-the-Hallowed-Hunt.png',
+		img: 'Trophies-of-the-Hallowed-Hunt.png',
 		description: 'Содержит все предметы из набора Trophies of the Hallowed Hunt',
 		price: 200,
 		hero: 'Ursa'
@@ -138,7 +138,7 @@ const tovars = [
 	{
 		id: 18,
 		title: 'Brightfist',
-		img: '../assets/img/heroes/Brightfist.png',
+		img: 'Brightfist.png',
 		description: 'Содержит все предметы из набора Brightfist',
 		price: 400,
 		hero: 'Marci'
@@ -146,7 +146,7 @@ const tovars = [
 	{
 		id: 19,
 		title: 'Withering Pain',
-		img: '../assets/img/heroes/Withering-Pain.png',
+		img: 'Withering-Pain.png',
 		description: 'Содержит все предметы из набора Withering Pain',
 		price: 300,
 		hero: 'Clinkz'
@@ -154,7 +154,7 @@ const tovars = [
 	{
 		id: 20,
 		title: 'War Rig Eradicators',
-		img: '../assets/img/heroes/War-Rig-Eradicators.png',
+		img: 'War-Rig-Eradicators.png',
 		description: 'Содержит все предметы из набора War Rig Eradicators',
 		price: 350,
 		hero: 'Techis'
@@ -162,7 +162,7 @@ const tovars = [
 	{
 		id: 21,
 		title: 'Grand Suppressor',
-		img: '../assets/img/heroes/Grand-Suppressor.png',
+		img: 'Grand-Suppressor.png',
 		description: 'Содержит все предметы из набора Grand Suppressor',
 		price: 320,
 		hero: 'Silencer'
@@ -170,7 +170,7 @@ const tovars = [
 	{
 		id: 22,
 		title: 'Bird of Prey',
-		img: '../assets/img/heroes/Bird-of-Prey.png',
+		img: 'Bird-of-Prey.png',
 		description: 'Содержит все предметы из набора Bird of Prey',
 		price: 600,
 		hero: 'Legion Commander'
@@ -178,7 +178,7 @@ const tovars = [
 	{
 		id: 23,
 		title: 'Cursed Cryptbreaker',
-		img: '../assets/img/heroes/Cursed-Cryptbreaker.png',
+		img: 'Cursed-Cryptbreaker.png',
 		description: 'Содержит все предметы из набора Cursed Cryptbreaker',
 		price: 500,
 		hero: 'Pudge'
@@ -186,7 +186,7 @@ const tovars = [
 	{
 		id: 24,
 		title: 'Grudges of the Gallows Tree',
-		img: '../assets/img/heroes/Grudges-of-the-Gallows-Tree.png',
+		img: 'Grudges-of-the-Gallows-Tree.png',
 		description: 'Содержит все предметы из набора Grudges of the Gallows Tree',
 		price: 510,
 		hero: 'Treant Protector'
@@ -194,7 +194,7 @@ const tovars = [
 	{
 		id: 25,
 		title: 'Blue Horizons',
-		img: '../assets/img/heroes/Blue-Horizons.png',
+		img: 'Blue-Horizons.png',
 		description: 'Содержит все предметы из набора Blue Horizons',
 		price: 1000,
 		hero: 'Marci'
@@ -202,7 +202,7 @@ const tovars = [
 	{
 		id: 26,
 		title: 'Fury of the Righteous Storm',
-		img: '../assets/img/heroes/Fury-of-the-Righteous-Storm.png',
+		img: 'Fury-of-the-Righteous-Storm.png',
 		description: 'Содержит все предметы из набора Fury of the Righteous Storm',
 		price: 250,
 		hero: 'Disruptor'
@@ -210,7 +210,7 @@ const tovars = [
 	{
 		id: 27,
 		title: 'Blacksail Cannoneer',
-		img: '../assets/img/heroes/Blacksail-Cannoneer.png',
+		img: 'Blacksail-Cannoneer.png',
 		description: 'Содержит все предметы из набора Blacksail Cannoneer',
 		price: 350,
 		hero: 'Sniper'
@@ -218,7 +218,7 @@ const tovars = [
 	{
 		id: 28,
 		title: 'Talons of the Endless Storm',
-		img: '../assets/img/heroes/Talons-of-the-Endless-Storm.png',
+		img: 'Talons-of-the-Endless-Storm.png',
 		description: 'Содержит все предметы из набора Talons of the Endless Storm',
 		price: 600,
 		hero: 'Chaos Knight'
@@ -226,7 +226,7 @@ const tovars = [
 	{
 		id: 29,
 		title: 'The King of Thieves',
-		img: '../assets/img/heroes/The-King-of-Thieves.png',
+		img: 'The-King-of-Thieves.png',
 		description: 'Содержит все предметы из набора The King of Thieves',
 		price: 550,
 		hero: 'Keeper of the Light'
@@ -234,7 +234,7 @@ const tovars = [
 	{
 		id: 30,
 		title: 'Secrets of the Celestial',
-		img: '../assets/img/heroes/Secrets-of-the-Celestial.png',
+		img: 'Secrets-of-the-Celestial.png',
 		description: 'Содержит все предметы из набора Secrets of the Celestial',
 		price: 500,
 		hero: 'Skywrath Mage'
@@ -242,7 +242,7 @@ const tovars = [
 	{
 		id: 31,
 		title: 'Apocalypse Unbound',
-		img: '../assets/img/heroes/Apocalypse-Unbound.png',
+		img: 'Apocalypse-Unbound.png',
 		description: 'Содержит все предметы из набора Apocalypse Unbound',
 		price: 500,
 		hero: 'Ancient Apparition'
@@ -250,7 +250,7 @@ const tovars = [
 	{
 		id: 32,
 		title: 'Blaze of Oblivion Back',
-		img: '../assets/img/heroes/Blaze-of-Oblivion-Back.png',
+		img: 'Blaze-of-Oblivion-Back.png',
 		description: 'Содержит все предметы из набора Blaze of Oblivion Back',
 		price: 450,
 		hero: 'Phoenix'
@@ -258,7 +258,7 @@ const tovars = [
 	{
 		id: 33,
 		title: 'Silverwurm Sacrifice',
-		img: '../assets/img/heroes/Silverwurm-Sacrifice.png',
+		img: 'Silverwurm-Sacrifice.png',
 		description: 'Содержит все предметы из набора Silverwurm Sacrifice',
 		price: 600,
 		hero: 'Dragon Knight'
@@ -266,7 +266,7 @@ const tovars = [
 	{
 		id: 34,
 		title: 'Scales of the Shadow Walker',
-		img: '../assets/img/heroes/Scales-of-the-Shadow-Walker.png',
+		img: 'Scales-of-the-Shadow-Walker.png',
 		description: 'Содержит все предметы из набора Scales of the Shadow Walker',
 		price: 450,
 		hero: 'Phantom Lancer'
@@ -274,7 +274,7 @@ const tovars = [
 	{
 		id: 35,
 		title: 'Days of the Demon',
-		img: '../assets/img/heroes/Days-of-the-Demon.png',
+		img: 'Days-of-the-Demon.png',
 		description: 'Содержит все предметы из набора Days of the Demon',
 		price: 550,
 		hero: 'Axe'
@@ -282,7 +282,7 @@ const tovars = [
 	{
 		id: 36,
 		title: 'Sublime Equilibrium',
-		img: '../assets/img/heroes/Sublime-Equilibrium.png',
+		img: 'Sublime-Equilibrium.png',
 		description: 'Содержит все предметы из набора Sublime Equilibrium',
 		price: 300,
 		hero: 'Void Spirit'
@@ -290,7 +290,7 @@ const tovars = [
 	{
 		id: 37,
 		title: 'Taur Rider',
-		img: '../assets/img/heroes/Taur-Rider.png',
+		img: 'Taur-Rider.png',
 		description: 'Содержит все предметы из набора Taur Rider',
 		price: 300,
 		hero: 'Alchemist'
@@ -298,7 +298,7 @@ const tovars = [
 	{
 		id: 38,
 		title: 'Ancestral Heritage',
-		img: '../assets/img/heroes/Ancestral-Heritage.png',
+		img: 'Ancestral-Heritage.png',
 		description: 'Содержит все предметы из набора Ancestral Heritage',
 		price: 450,
 		hero: 'Jakiro'
@@ -306,7 +306,7 @@ const tovars = [
 	{
 		id: 39,
 		title: 'Triumph of the Imperatrix',
-		img: '../assets/img/heroes/Triumph-of-the-Imperatrix.png',
+		img: 'Triumph-of-the-Imperatrix.png',
 		description: 'Содержит все предметы из набора Triumph of the Imperatrix',
 		price: 550,
 		hero: 'Legion Commander'
@@ -314,7 +314,7 @@ const tovars = [
 	{
 		id: 40,
 		title: 'Crescent Huntress',
-		img: '../assets/img/heroes/Crescent-Huntress.png',
+		img: 'Crescent-Huntress.png',
 		description: 'Содержит все предметы из набора Crescent Huntress',
 		price: 400,
 		hero: 'Spectre'
@@ -322,7 +322,7 @@ const tovars = [
 	{
 		id: 41,
 		title: 'Flashpoint Proselyte',
-		img: '../assets/img/heroes/Flashpoint-Proselyte.png',
+		img: 'Flashpoint-Proselyte.png',
 		description: 'Содержит все предметы из набора Flashpoint Proselyte',
 		price: 500,
 		hero: 'Huskar'
@@ -332,7 +332,7 @@ const tovars = [
 	{
 		id: 42,
 		title: 'Feast of Abscession',
-		img: '../assets/img/heroes/Feast-of-Abscession.png',
+		img: 'Feast-of-Abscession.png',
 		description: 'Содержит все предметы из аркана набора Feast of Abscession',
 		price: 1800,
 		hero: 'Pudge',
@@ -341,7 +341,7 @@ const tovars = [
 	{
 		id: 43,
 		title: 'Manifold Paradox',
-		img: '../assets/img/heroes/Manifold-Paradox.png',
+		img: 'Manifold-Paradox.png',
 		description: 'Содержит все предметы из набора Manifold Paradox',
 		price: 1800,
 		hero: 'Phantom Assassin',
@@ -350,7 +350,7 @@ const tovars = [
 	{
 		id: 44,
 		title: 'Demon Eater',
-		img: '../assets/img/heroes/Demon-Eater.png',
+		img: 'Demon-Eater.png',
 		description: 'Содержит все предметы из набора Demon Eater',
 		price: 1800,
 		hero: 'Shadow Fiend',
@@ -359,7 +359,7 @@ const tovars = [
 	{
 		id: 45,
 		title: 'Frost Avalanche',
-		img: '../assets/img/heroes/Frost-Avalanche.png',
+		img: 'Frost-Avalanche.png',
 		description: 'Содержит все предметы из набора Frost Avalanche',
 		price: 1800,
 		hero: 'Crystal Maiden',
@@ -368,7 +368,7 @@ const tovars = [
 	{
 		id: 46,
 		title: 'Fractal Horns of Inner Abysm',
-		img: '../assets/img/heroes/Fractal-Horns-of-Inner-Abysm.png',
+		img: 'Fractal-Horns-of-Inner-Abysm.png',
 		description: 'Содержит все предметы из набора Fractal Horns of Inner Abysm',
 		price: 1800,
 		hero: 'Terrorblade',
@@ -377,7 +377,7 @@ const tovars = [
 	{
 		id: 47,
 		title: "Great Sage's Reckoning",
-		img: '../assets/img/heroes/Great-Sage-Reckoning.png',
+		img: 'Great-Sage-Reckoning.png',
 		description: "Содержит все предметы из набора Great Sage's Reckoning",
 		price: 1800,
 		hero: 'Monkey King',
@@ -386,7 +386,7 @@ const tovars = [
 	{
 		id: 48,
 		title: 'Bladeform Legacy',
-		img: '../assets/img/heroes/Bladeform-Legacy.png',
+		img: 'Bladeform-Legacy.png',
 		description: 'Содержит все предметы из набора Bladeform Legacy',
 		price: 1800,
 		hero: 'Juggernaut',
@@ -395,7 +395,7 @@ const tovars = [
 	{
 		id: 49,
 		title: "Flockheart's Gamble",
-		img: '../assets/img/heroes/Flockheart-Gamble.png',
+		img: 'Flockheart-Gamble.png',
 		description: "Содержит все предметы из набора Flockheart's Gamble",
 		price: 1800,
 		hero: 'Ogre Magi',
@@ -404,7 +404,7 @@ const tovars = [
 	{
 		id: 50,
 		title: 'Tempest Helm of the Thundergod',
-		img: '../assets/img/heroes/Tempest-Helm-of-the-Thundergod.png',
+		img: 'Tempest-Helm-of-the-Thundergod.png',
 		description: 'Содержит все предметы из набора Tempest Helm of the Thundergod',
 		price: 1800,
 		hero: 'Zeus',
@@ -413,7 +413,7 @@ const tovars = [
 	{
 		id: 51,
 		title: 'Fiery Soul of the Slayer',
-		img: '../assets/img/heroes/Fiery-Soul-of-the-Slayer.png',
+		img: 'Fiery-Soul-of-the-Slayer.png',
 		description: 'Содержит все предметы из набора Fiery Soul of the Slayer',
 		price: 1800,
 		hero: 'Lina',
@@ -422,7 +422,7 @@ const tovars = [
 	{
 		id: 52,
 		title: 'The Magus Cypher',
-		img: '../assets/img/heroes/The-Magus-Cypher.png',
+		img: 'The-Magus-Cypher.png',
 		description: 'Содержит все предметы из набора The Magus Cypher',
 		price: 1800,
 		hero: 'Rubick',
@@ -431,7 +431,7 @@ const tovars = [
 	{
 		id: 53,
 		title: 'Swine of the Sunken Galley',
-		img: '../assets/img/heroes/Swine-of-the-Sunken-Galley.png',
+		img: 'Swine-of-the-Sunken-Galley.png',
 		description: 'Содержит все предметы из набора Swine of the Sunken Galley',
 		price: 1800,
 		hero: 'Techis',
@@ -440,7 +440,7 @@ const tovars = [
 	{
 		id: 54,
 		title: 'Mindless Slaughter',
-		img: '../assets/img/heroes/Mindless-Slaughter.png',
+		img: 'Mindless-Slaughter.png',
 		description: 'Содержит все предметы из набора Mindless Slaughter',
 		price: 500,
 		hero: 'Pudge'
@@ -448,7 +448,7 @@ const tovars = [
 	{
 		id: 55,
 		title: 'Verdant Predator',
-		img: '../assets/img/heroes/Verdant-Predator.png',
+		img: 'Verdant-Predator.png',
 		description: 'Содержит все предметы из набора Verdant Predator',
 		price: 500,
 		hero: 'Venomancer'
@@ -456,7 +456,7 @@ const tovars = [
 	{
 		id: 56,
 		title: 'Silent Slayer',
-		img: '../assets/img/heroes/Silent-Slayer.png',
+		img: 'Silent-Slayer.png',
 		description: 'Содержит все предметы из набора Silent Slayer',
 		price: 500,
 		hero: 'Silencer'
@@ -464,7 +464,7 @@ const tovars = [
 	{
 		id: 57,
 		title: 'Ancient Inheritance',
-		img: '../assets/img/heroes/Ancient-Inheritance.png',
+		img: 'Ancient-Inheritance.png',
 		description: 'Содержит все предметы из набора Ancient Inheritance',
 		price: 500,
 		hero: 'Tiny'
@@ -472,7 +472,7 @@ const tovars = [
 	{
 		id: 58,
 		title: 'Directive of the Sunbound',
-		img: '../assets/img/heroes/Directive-of-the-Sunbound.png',
+		img: 'Directive-of-the-Sunbound.png',
 		description: 'Содержит все предметы из набора Directive of the Sunbound',
 		price: 500,
 		hero: 'Clockwerk'
@@ -480,7 +480,7 @@ const tovars = [
 	{
 		id: 59,
 		title: 'Scorched Amber',
-		img: '../assets/img/heroes/Scorched-Amber.png',
+		img: 'Scorched-Amber.png',
 		description: 'Содержит все предметы из набора Scorched Amber',
 		price: 500,
 		hero: 'Dragon Knight'
@@ -488,7 +488,7 @@ const tovars = [
 	{
 		id: 60,
 		title: 'Automaton Antiquity',
-		img: '../assets/img/heroes/Automaton-Antiquity.png',
+		img: 'Automaton-Antiquity.png',
 		description: 'Содержит все предметы из набора Automaton Antiquity',
 		price: 500,
 		hero: 'Broodmother'
@@ -496,7 +496,7 @@ const tovars = [
 	{
 		id: 61,
 		title: 'Glory of the Elderflame',
-		img: '../assets/img/heroes/Glory-of-the-Elderflame.png',
+		img: 'Glory-of-the-Elderflame.png',
 		description: 'Содержит все предметы из набора Glory of the Elderflame',
 		price: 500,
 		hero: 'Lina'
@@ -504,7 +504,7 @@ const tovars = [
 	{
 		id: 62,
 		title: 'Origin of the Dark Oath',
-		img: '../assets/img/heroes/Origin-of-the-Dark-Oath.png',
+		img: 'Origin-of-the-Dark-Oath.png',
 		description: 'Содержит все предметы из набора Origin of the Dark Oath',
 		price: 500,
 		hero: 'Night Stalker'
@@ -512,7 +512,7 @@ const tovars = [
 	{
 		id: 63,
 		title: 'Grim Destiny',
-		img: '../assets/img/heroes/Grim-Destiny.png',
+		img: 'Grim-Destiny.png',
 		description: 'Содержит все предметы из набора Grim Destiny',
 		price: 500,
 		hero: 'Wraith King'
@@ -520,7 +520,7 @@ const tovars = [
 	{
 		id: 64,
 		title: 'Endless Night',
-		img: '../assets/img/heroes/Endless-Night.png',
+		img: 'Endless-Night.png',
 		description: 'Содержит все предметы из набора Endless Night',
 		price: 500,
 		hero: 'Abaddon'
@@ -528,7 +528,7 @@ const tovars = [
 	{
 		id: 65,
 		title: 'Tales of the Windward Rogue',
-		img: '../assets/img/heroes/Tales-of-the-Windward-Rogue.png',
+		img: 'Tales-of-the-Windward-Rogue.png',
 		description: 'Содержит все предметы из набора Tales of the Windward Rogue',
 		price: 500,
 		hero: 'Pangolier'
@@ -536,7 +536,7 @@ const tovars = [
 	{
 		id: 66,
 		title: 'Herald of the Ember Eye',
-		img: '../assets/img/heroes/Herald-of-the-Ember-Eye.png',
+		img: 'Herald-of-the-Ember-Eye.png',
 		description: 'Содержит все предметы из набора Herald of the Ember Eye',
 		price: 500,
 		hero: 'Grimstroke'
