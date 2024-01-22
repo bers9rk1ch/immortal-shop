@@ -1,0 +1,150 @@
+footer {
+	position: relative;
+	display: grid;
+	justify-content: center;
+	align-items: end;
+	z-index: 1;
+
+	.footer-item {
+		opacity: .5;
+		transition: opacity .2s ease-in-out;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.copyRight {
+		position: absolute;
+		color: white;
+		
+		text-align: center;
+		justify-self: center;
+		display: grid;
+		gap: 5px;
+
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.footer-container {
+		max-width: 1400px;
+		margin-top: 100px;
+		display: grid;
+		padding: 10px;
+		color: white;
+		margin-bottom: 80px;
+
+		& > div {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	
+		.title {
+			font-size: 50px;
+			display: flex;
+			width: 100%;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+	
+		.footer-about {
+			display: grid;
+			justify-content: center;
+
+			p {
+				text-wrap: balance;
+				font-size: 30px;
+
+				&.ratingSite {
+					margin-top: 10px;
+					font-size: 35px;
+					font-weight: 700;
+
+					span {
+						white-space: nowrap;
+
+						svg {
+							fill: orange;
+						}
+					}
+				}
+			}
+		}
+	
+		.footer-social {
+			display: grid;
+			justify-content: center;
+			gap: 20px;
+
+			.company-info {
+				display: grid;
+				align-content: center;
+				gap: 10px;
+
+				p {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					font-size: 20px;
+
+					span {
+						font-size: 25px;
+					}
+
+					a {
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			
+			.social-links {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				flex-wrap: wrap;
+	
+				li {
+					svg {
+						color: white;
+						width: 30px;
+						height: 30px;
+						cursor: pointer;
+						transition: color .1s ease-in-out;
+
+						&:hover {
+							color: var(--themeColor);
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	@media (max-width:800px) {
+		
+		.copyRight {
+			padding: 0px;
+		}
+
+		.footer-container {
+
+			& > div {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 30px;
+				.footer-about p {
+					font-size: 20px;
+				}
+			}
+
+			.footer-social {
+				justify-content: start;
+			}
+		}
+	}
+}

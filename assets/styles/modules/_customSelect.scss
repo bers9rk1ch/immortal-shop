@@ -1,0 +1,97 @@
+.customSelect {
+	display: grid;
+	background-color: #1e1e1e;
+	width: max-content;
+	height: min-content;
+	
+	.select-input {
+		width: 300px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		background-color: #1e1e1e;
+
+		input {
+			width: 100%;
+			height: 100%;
+			padding-left: 10px;
+			font-size: 20px;
+			background-color: transparent;
+			color: white;
+
+			&::placeholder {
+				color: white;
+			}
+
+		}
+
+		div {
+			padding: 5px;
+			.m-icon {
+				color: white;
+				font-size: 25px;
+			}
+		}
+
+		.close {
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity .1s ease-in-out, visibility .1s ease-in-out;
+
+			.m-icon {
+				cursor: pointer;
+				opacity: .5;
+				transition: opacity .1s ease-in-out;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+		input:valid + .close {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.select-list-container {
+		position: relative;
+		
+		.select-list {
+			position: absolute;
+			width: 300px;
+			max-height: 200px;
+			overflow: auto;
+			z-index: 999;
+			background-color: #1e1e1e;
+			opacity: 0;
+			visibility: hidden;
+
+			li {
+				color: white;
+				padding: 15px;
+				background-color: #1e1e1e;
+				user-select: none;
+				cursor: pointer;
+				transition: background-color .1s ease-in-out;
+
+				&:hover {
+					background-color: #323232;
+				}
+			}
+		}
+
+	}
+
+	&:focus-within {
+		.select-list {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+}
+
+
+

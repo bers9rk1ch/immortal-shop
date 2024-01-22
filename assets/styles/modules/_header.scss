@@ -1,0 +1,124 @@
+@import './keyFrames';
+
+.container-header {
+	display: flex;
+	justify-content: center;
+	height: 200px;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	width: 100%;
+	position: relative;
+	transition: box-shadow .2s ease-in-out;
+
+	&.fixed {
+		
+		.header-container {
+			display: grid;
+		}
+
+		.navbar {
+			position: fixed;
+			justify-self: end;
+			box-shadow: 0 0 100px black;
+			background-color: rgba(0, 0, 0, .9);
+			border-radius: 25px;
+		}
+
+		@media (min-width:800px) {
+			box-shadow: 0 .5px 1px 1px gray;
+			position: fixed;
+			animation: fadeInUp .2s ease-in-out;
+			// width: 100vw;
+			background-color: black;
+			.header-container {
+				
+				padding: 10px 0px;
+				height: 200px;
+				min-width: auto;
+				
+			}
+		}
+	}
+	
+	.header-container {
+		justify-self: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+		width: 1200px;
+		z-index: 999;
+		background-color: black;
+		
+		
+
+		.logo a  {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			position: relative;
+			cursor: pointer;
+
+			&:hover {
+
+				img {
+					filter: drop-shadow(0 0 1em #ff7b00);
+				}
+
+				h1 {
+					text-shadow: 1px 1px .5em currentColor, 2px 2px 2em currentColor;
+				}
+				
+			}
+			
+
+			img {
+				width: 150px;
+				height: 150px;
+				transition: filter .2s ease-in-out;
+				filter: drop-shadow(0 0 2em #ff7b00);
+			}
+
+			h1 {
+				display: flex;
+				align-items: center;
+				font-size: 50px;
+				font-family: 'trajanpro';
+				
+				color: #ff7b00;
+				text-shadow: 1px 1px 1em currentColor, 2px 2px 4em currentColor;
+				transition: text-shadow .2s ease-in-out;
+				height: min-content;
+				width: min-content;
+
+				background: linear-gradient(-45deg, #fd0000, #ff4d00, #ff9500, #e8af3e);
+				background-size: 300%;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				animation: animated_text 5s ease-in-out infinite;
+				-moz-animation: animated_text 5s ease-in-out infinite;
+				-webkit-animation: animated_text 5s ease-in-out infinite;
+				
+				@keyframes animated_text {
+					0% { background-position: 0px 50%; }
+					50% { background-position: 100% 50%; }
+					100% { background-position: 0px 50%; }
+				}
+			}
+			.img {
+				z-index: -1;
+				
+				width: 180px;
+				height: 120px;
+				
+				position: absolute;
+			}
+		}
+	}
+}

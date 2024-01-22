@@ -1,0 +1,44 @@
+@import './keyFrames';
+
+.remove-filters {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	opacity: 1;
+	animation: smoothOnset .5s ease-in-out;
+}
+
+.tovar-filters {
+	width: 1200px;
+	
+	form {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		row-gap: 25px;
+
+		.tovar-filter-money {
+			user-select: none;
+
+			h1 {
+				display: flex;
+				align-items: center;
+				color: white;
+				font-size: 20px;
+				cursor: pointer;
+				
+				.m-icon {
+					font-size: 40px;
+					transform: rotate(0);
+					transition: transform .1s cubic-bezier(0.19, 1, 0.22, 1);
+				}
+			}
+
+			&.active {
+				span {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}

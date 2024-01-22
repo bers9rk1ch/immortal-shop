@@ -1,0 +1,38 @@
+.scroll-up-button {
+	position: absolute;
+	// width: 100%;
+	// max-width: 1700px;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 100px 1fr;
+
+	&.visible {
+		.scroll-up-button-container span {
+			opacity: .5;
+			visibility: visible;
+		}
+	}
+
+	.scroll-up-button-container {
+		position: relative;
+		display: flex;
+		align-items: end;
+		justify-content: end;
+
+		span {
+			font-size: 50px;
+			color: white;
+			cursor: pointer;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+			position: fixed;
+			display: flex;
+			z-index: 999;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

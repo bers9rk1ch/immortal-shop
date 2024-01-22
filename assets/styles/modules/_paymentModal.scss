@@ -1,0 +1,199 @@
+.payment-modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .6);
+	z-index: 2000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(20px);
+	transition: opacity .2s ease-in-out, visibility .2s ease-in-out, transform .2s ease-in-out;
+
+	body:has(&.active) {
+		overflow-y: hidden;
+	}
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	.payment-modal_container {
+		position: relative;
+		padding: 40px;
+		width: 800px;
+		background-color: rgba(0, 0, 0, .9);
+		box-shadow: 0 0 100px black;
+		border-radius: 20px;
+		display: grid;
+		grid-template-rows: max-content 1fr 100px;
+		color: white;
+		gap: 50px;
+		overflow-y: auto;
+		max-height: 100vh;
+
+		&::-webkit-scrollbar {
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}
+
+		.payment-modal_close-button {
+			position: absolute;
+			justify-self: flex-end;
+			background-color: transparent;
+			color: white;
+			font-size: 30px;
+			margin-right: 20px;
+			cursor: pointer;
+			transition: color .1s ease-in-out;
+			
+			&:hover {
+				color: red;
+			}
+		}
+
+		.payment-title {
+			font-size: 50px;
+		}
+
+		.payment-buy {
+			display: grid;
+			align-content: center;
+
+			.payment-buy-info {
+				display: grid;
+				gap: 20px;
+				font-size: 30px;
+			}
+
+			.payment-buy-buttons {
+				font-size: 30px;
+				display: grid;
+				gap: 20px;
+	
+				label {
+					opacity: .5;
+				}
+
+				.payment-buy-error {
+					color: red;
+					font-size: 25px;
+					font-weight: 700;
+				}
+	
+				input {
+					font-size: 30px;
+					padding: 10px;
+					background-color: #181818;
+					color: white;
+					border-radius: 15px;
+					transition: box-shadow .1s ease-in-out;
+					
+					resize: none;
+	
+					&:focus {
+						box-shadow: 0 0 1px 1px red;
+					}
+				}
+	
+				button {
+					width: max-content;
+					justify-self: end;
+	
+					font-size: 30px;
+					padding: 10px 20px;
+					color: white;
+					background-color: #23d996;
+					border: 2px solid transparent;
+					border-radius: 20px;
+					cursor: pointer;
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: end;
+					transition: box-shadow .2s ease-in-out, border .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
+	
+					&:hover {
+						box-shadow: 0 0 20px #23d996, 0 0 5px #23d996 inset;
+						border: 2px solid #23d996;
+						background-color: transparent;
+						color: #23d996;
+					}
+					&::after {
+						content: 'arrow_forward_ios';
+						font-family: 'Material Symbol';
+						font-size: 30px;
+						color: #23d996;
+						z-index: 1;
+						position: absolute;
+						transform: translateX(0);
+						visibility: hidden;
+						opacity: 0;
+						transition: transform .1s ease-in-out, visibility .1s ease-in-out, opacity .1s ease-in-out;
+						
+					}
+					&:hover::after {
+						transform: translateX(60px);
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+	
+				&::after {
+					content: '';
+					width: 100%;
+					height: 1px;
+					background-color: white;
+				}
+			}
+		}
+
+		.payment-questions {
+			display: grid;
+
+			.payment-questions_title {
+				margin-bottom: 50px;
+			}
+
+			li {
+				padding: 20px;
+				display: grid;
+				gap: 10px;
+				cursor: pointer;
+				transition: background-color .1s ease-in-out;
+
+				h1 {
+					font-size: 25px;
+				}
+
+				div {
+					font-size: 20px;
+					display: grid;
+					grid-template-rows: 0fr;
+					overflow: hidden;
+					opacity: .7;
+					
+					transition: grid-template-rows .2s ease-in-out;
+				}
+
+				&:hover {
+					background-color: rgba(255, 255, 255, .1);
+				}
+
+				&.open {
+					div {
+						grid-template-rows: 1fr;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'Material Symbol';
+	src: url(../font/material-symbol-rounded.woff2);
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'brusing';
+	src: url(../font/brusing.ttf);
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'trajanpro';
+	src: url(../font/trajanpro_bold.otf);
+	font-weight: 900;
+}
+
+:root {
+	--scrollbar-backround-color: #131313;
+	--scrollbar-thumb-color: #222222;
+	--themeColor: #d14905;
+	--arcanaColor: #ade55c;
+	--arcanaGradient: linear-gradient(to right,#c2f081, #ade55c, #79aa34);
+	--ratingStarColor: #fba800;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+	background-color: var(--scrollbar-backround-color);
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-thumb-color);
+}
+::-webkit-scrollbar-corner {
+	background-color: var(--scrollbar-backround-color);
+}
+
+html {
+	
+	// scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+	background-color: #131313;
+
+	body {
+		font-family: 'Montserrat', sans-serif;
+		background-color: black;
+		// background: url(../img/prekol-3.gif) no-repeat center center / cover;
+		// background-attachment: fixed;
+		// display: grid;
+		scrollbar-gutter: stable;
+		min-height: 100vh;
+	}
+}
+
+.m-icon {
+	font-family: 'Material Symbol';
+}
+
+input, button, textarea {
+	outline: none;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: currentColor;
+}
+
+ul, li {
+	list-style: none;
+}
